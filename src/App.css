@@ -86,6 +86,10 @@ img {
 }
 
 /*------------------------- REUSEABLE GLOBAL STYLES -------------------------  */
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+}
 
 .grid {
   display: grid;
@@ -94,6 +98,13 @@ img {
 
 .section {
   padding-block: 70px;
+}
+
+.section-title {
+  font-size: var(--big-font-size);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 .button {
