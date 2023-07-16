@@ -107,6 +107,10 @@ img {
   margin-bottom: 70px;
 }
 
+.section-title span {
+  color: var(--first-color);
+}
+
 .button {
   display: inline-block;
   color: var(--title-color);
