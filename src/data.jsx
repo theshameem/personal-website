@@ -73,7 +73,7 @@ export const personalInfo = [
   {
     id: 3,
     title: "Age : ",
-    description: "26 Years",
+    description: "25 Years",
   },
 
   {
@@ -91,7 +91,7 @@ export const personalInfo = [
   {
     id: 6,
     title: "Address : ",
-    description: "Dhaka",
+    description: "Dhaka, Bangladesh",
   },
 
   {
@@ -122,25 +122,25 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: "12+",
+    no: "1+",
     title: "Years of <br /> Experience",
   },
 
   {
     id: 2,
-    no: "97+",
+    no: "5+",
     title: "Completed <br /> Projects",
   },
 
   {
     id: 3,
-    no: "81+",
-    title: "Happy <br /> Customers",
+    no: "2+",
+    title: "Happy <br /> Recommendation",
   },
 
   {
     id: 4,
-    no: "53+",
+    no: "3+",
     title: " Awards <br /> Won",
   },
 ];
