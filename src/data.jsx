@@ -150,8 +150,8 @@ export const resume = [
     id: 1,
     category: "experience",
     icon: <FaBriefcase />,
-    year: "2018 - PRESENT",
-    title: "Web Developer <span> Envato </span>",
+    year: "Feb, 2022 - Present",
+    title: "Software Engineer <span> Selise Digital Platforms </span>",
     desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
   },
 
@@ -159,44 +159,46 @@ export const resume = [
     id: 2,
     category: "experience",
     icon: <FaBriefcase />,
-    year: "2013 - 2018",
-    title: "UI/UX Designer <span> Themeforest </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
+    year: "2019 - 2022",
+    title:
+      "Trainer of Data Structure & Algorithms <span> DIU Take-off Programming Camp </span>",
+    desc: "I conducted several training sessions on data structures and algorithms for the selected students participating in the DIU Take-off Programming contest.",
   },
 
   {
     id: 3,
     category: "experience",
     icon: <FaBriefcase />,
-    year: "2005 - 2013",
-    title: "Consultant <span> Videohive </span>",
-    desc: "Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt",
+    year: "Apr, 2021 - Jul, 2021",
+    title: "Trainer <span> DIU Girls' Computer Programming Club </span>",
+    desc: "I conducted C programming language training sessions for first-year students who were selected for the program.",
   },
 
   {
     id: 4,
     category: "education",
     icon: <FaGraduationCap />,
-    year: "2015",
-    title: "Engineering Degree <span> Oxford University </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore",
+    year: "Sep, 2017 - Jul, 2022",
+    title: "Bachelor's Degree <span> Daffodil International University </span>",
+    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
   },
 
   {
     id: 5,
     category: "education",
     icon: <FaGraduationCap />,
-    year: "2012",
-    title: "Master Degree <span> KIEV University </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
+    year: "2014 - 2016",
+    title:
+      "Higher Secondary School Certificate <span> Shibpur Model College </span>",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore",
   },
 
   {
     id: 6,
     category: "education",
     icon: <FaGraduationCap />,
-    year: "2009",
-    title: "Bachelor Degree <span> Tunis High School </span>",
+    year: "2009 - 2014",
+    title: "Secondary School Certificate <span> MoharPara High School </span>",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore",
   },
 ];
