@@ -57,3 +57,48 @@
   height: 1px;
   background-color: var(--text-color);
 }
+
+.separator {
+  border-top: 1px solid var(--border-color);
+  max-width: 40%;
+  margin: 72px auto 56px;
+}
+
+.subtitle-center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 48px;
+}
+
+.progress-circle {
+  height: 120px;
+  width: 120px;
+}
+
+.CircularProgressbar-path {
+  stroke: var(--first-color) !important;
+  stroke-linecap: butt !important;
+}
+
+.CircularProgressbar-trail {
+  stroke: var(--container-color) !important;
+}
+
+.CircularProgressbar-text {
+  fill: var(--title-color) !important;
+  font-family: var(--second-font) !important;
+  font-size: var(--large-font-size) !important;
+}
+
+.skill-title {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  text-align: center;
+  margin-top: 24px;
+}

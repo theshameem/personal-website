@@ -2,12 +2,14 @@ import React from "react";
 import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/Resume_Shameem_Alam.pdf";
 import Info from "../../components/Info";
+import Skills from "../../components/Skills";
 import Stats from "../../components/Stats";
 import "./About.css";
 
 function About() {
   return (
     <main className="section container">
+      {/* About section  */}
       <section className="about">
         <h2 className="section-title">
           About <span>Me</span>
@@ -32,6 +34,17 @@ function About() {
           <div className="stats grid">
             <Stats />
           </div>
+        </div>
+      </section>
+
+      <div className="separator" />
+
+      {/* Skills section  */}
+      <section className="skills">
+        <h3 className="section-subtitle subtitle-center">My Skills</h3>
+
+        <div className="skills-container grid">
+          <Skills />
         </div>
       </section>
     </main>
