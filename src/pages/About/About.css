@@ -7,6 +7,7 @@
 .info-list {
   row-gap: 20px;
   margin-bottom: 32px;
+  padding-left: 0;
 }
 
 .section-subtitle {
