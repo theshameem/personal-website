@@ -10,6 +10,10 @@
   padding-left: 0;
 }
 
+.info-item {
+  width: max-content;
+}
+
 .section-subtitle {
   font-size: var(--h3-font-size);
   font-weight: 600;
