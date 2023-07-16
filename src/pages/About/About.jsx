@@ -2,8 +2,10 @@ import React from "react";
 import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/Resume_Shameem_Alam.pdf";
 import Info from "../../components/Info";
+import ResumeItem from "../../components/ResumeItem";
 import Skills from "../../components/Skills";
 import Stats from "../../components/Stats";
+import { resume } from "../../data";
 import "./About.css";
 
 function About() {
@@ -45,6 +47,33 @@ function About() {
 
         <div className="skills-container grid">
           <Skills />
+        </div>
+      </section>
+
+      <div className="separator" />
+
+      {/* Resume section  */}
+      <section className="resume">
+        <h3 className="section-subtitle subtitle-center">
+          Experience & Education
+        </h3>
+
+        <div className="resume-container grid">
+          <div className="resume-data">
+            {resume.map((val) => {
+              if (val.category === "experience") {
+                return <ResumeItem key={val.id} {...val} />;
+              }
+            })}
+          </div>
+
+          <div className="resume-data">
+            {resume.map((val) => {
+              if (val.category === "education") {
+                return <ResumeItem key={val.id} {...val} />;
+              }
+            })}
+          </div>
         </div>
       </section>
     </main>
