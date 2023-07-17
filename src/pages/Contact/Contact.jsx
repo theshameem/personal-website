@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import React from "react";
 import {
   FaEnvelopeOpen,
@@ -8,9 +9,36 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
+import { Form, Input, TextArea } from "semantic-ui-react";
+import Swal from "sweetalert2";
 import "./Contact.css";
 
+const SERVICE_ID = "service_oonoivv";
+const TEMPLATE_ID = "template_ya85x4h";
+const PUBLIC_KEY = "rViE4E2jFiGYr1uzo";
+
 function Contact() {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    console.log("submit form: ", e.target);
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
+      (result) => {
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        });
+      },
+      (error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        });
+      }
+    );
+    e.target.reset();
+  };
+
   return (
     <section className="contact section">
       <h2 className="section-title">
@@ -81,27 +109,33 @@ function Contact() {
           </div>
         </div>
 
-        <div className="contact-form">
+        <Form className="contact-form" onSubmit={handleOnSubmit}>
           <div className="form-input-group">
             <div className="form-input-div">
-              <input
-                type="text"
+              <Form.Field
+                required
+                control={Input}
+                name="user_name"
                 placeholder="Your Name"
                 className="form-control"
               />
             </div>
 
             <div className="form-input-div">
-              <input
-                type="email"
+              <Form.Field
+                required
+                control={Input}
+                name="user_email"
                 placeholder="Your Email"
                 className="form-control"
               />
             </div>
 
             <div className="form-input-div">
-              <input
-                type="text"
+              <Form.Field
+                required
+                control={Input}
+                name="email_subject"
                 placeholder="Your Subject"
                 className="form-control"
               />
@@ -110,18 +144,21 @@ function Contact() {
 
           <div className="form-input-div">
             <textarea
+              required
+              control={TextArea}
+              name="message"
               placeholder="Your Message"
               className="form-control textarea"
-            ></textarea>
+            />
           </div>
 
-          <button className="button">
+          <button className="button" type="submit">
             Send Message
             <span className="button-icon contact-button-icon">
               <FiSend />
             </span>
           </button>
-        </div>
+        </Form>
       </div>
     </section>
   );
