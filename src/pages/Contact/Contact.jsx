@@ -20,7 +20,6 @@ const PUBLIC_KEY = "rViE4E2jFiGYr1uzo";
 function Contact() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log("submit form: ", e.target);
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
         Swal.fire({
