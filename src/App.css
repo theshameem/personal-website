@@ -35,14 +35,15 @@
   --weight-600: 600;
   --weight-700: 700;
   --weight-800: 800;
-
-  /*----------------------------- BASE ----------------------------- */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 }
+
+/*----------------------------- BASE ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 input,
 textarea {
