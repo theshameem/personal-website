@@ -1,6 +1,5 @@
-import { Alert, Snackbar } from "@mui/material";
 import emailjs from "emailjs-com";
-import React, { useState } from "react";
+import React from "react";
 import {
   FaEnvelopeOpen,
   FaFacebookF,
@@ -11,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { Form, Input, TextArea } from "semantic-ui-react";
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 const SERVICE_ID = "service_oonoivv";
@@ -18,30 +18,25 @@ const TEMPLATE_ID = "template_ya85x4h";
 const PUBLIC_KEY = "rViE4E2jFiGYr1uzo";
 
 function Contact() {
-  const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState("Message Sent Successfully");
-
-  const handleClose = (reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-
-    setOpen(false);
-  };
-
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
-        setOpen(true);
-        setMessage("Message Sent Successfully");
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        });
+        e.target.reset();
       },
       (error) => {
-        setOpen(true);
-        setMessage("Ooops, something went wrong");
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        });
+        e.target.reset();
       }
     );
-    e.target.reset();
   };
 
   return (
@@ -165,24 +160,6 @@ function Contact() {
           </button>
         </Form>
       </div>
-
-      <Snackbar
-        open={open}
-        autoHideDuration={3000}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-      >
-        <Alert
-          severity={
-            message == "Message Sent Successfully" ? "success" : "warning"
-          }
-        >
-          {message}
-        </Alert>
-      </Snackbar>
     </section>
   );
 }
