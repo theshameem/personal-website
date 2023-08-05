@@ -70,7 +70,7 @@ function Contact() {
 
               <div>
                 <span className="info-title">Call me</span>
-                <h4 className="info-desc">+88 01611377700</h4>
+                <h4 className="info-desc">+880 16113 77700</h4>
               </div>
             </div>
           </div>
