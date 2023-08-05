@@ -50,7 +50,7 @@ function Contact() {
           <h3 className="contact-title">Don't be Shy !</h3>
 
           <p className="contact-description">
-            Feel free to get in tough with me. I am always open to discussing
+            Feel free to get in touch with me. I am always open to discussing
             new projects, creative ideas or opportunities to be part of your
             visions.
           </p>
