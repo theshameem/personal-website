@@ -134,7 +134,7 @@ export const stats = [
 
   {
     id: 3,
-    no: "2+",
+    no: "3+",
     title: "Happy <br /> Recommendation",
   },
 
@@ -152,7 +152,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: "Feb, 2022 - Present",
     title: "Software Engineer <span> Selise Digital Platforms </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    desc: "<li> Contributed to the development of new features for an enterprise project as a front-end developer </li> <li>Currently working on a content management system (CMS) in front-end development </li><li>Implementing new features and modules using HTML, CSS, and Angular as required </li><li>Integrating APIs and implementing CRUD operations on the front-end side </li><li>Maintaining code review standards and following organizational rules and regulations </li><li>Collaborating with cross-functional teams in a fast-paced, deadline-driven environment </li><li> Working with an Agile methodology </li>",
   },
 
   {
@@ -180,7 +180,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: "Sep, 2017 - Jul, 2022",
     title: "Bachelor's Degree <span> Daffodil International University </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
+    desc: "<li> Achieved the prestigious title of champion in the DIU Take-off Programming Contest, Spring 2018, surpassing 300 participants. </li><li>Participated in three regional contests of ACM ICPC Dhaka, showcasing my dedication and involvement in competitive programming. </li> <li> <strong> CGPA: </strong> 3.58 out of 4.00 </li>",
   },
 
   {
@@ -190,7 +190,7 @@ export const resume = [
     year: "2014 - 2016",
     title:
       "Higher Secondary School Certificate <span> Shibpur Model College </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore",
+    desc: "<li><strong> GPA: </strong> 4.67 out of 5.00 </li>",
   },
 
   {
@@ -199,7 +199,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: "2009 - 2014",
     title: "Secondary School Certificate <span> MoharPara High School </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore",
+    desc: "<li><strong> GPA: </strong> 4.38 out of 5.00 </li>",
   },
 ];
 
@@ -207,49 +207,49 @@ export const skills = [
   {
     id: 1,
     title: "Html",
-    percentage: "25",
+    percentage: "90",
   },
 
   {
     id: 2,
-    title: "Javascript",
-    percentage: "89",
+    title: "Css",
+    percentage: "85",
   },
 
   {
     id: 3,
-    title: "Css",
-    percentage: "70",
+    title: "JavaScript",
+    percentage: "89",
   },
 
   {
     id: 4,
-    title: "Php",
-    percentage: "66",
+    title: "TypeScript",
+    percentage: "85",
   },
 
   {
     id: 5,
-    title: "Wordpress",
-    percentage: "95",
+    title: "Angular",
+    percentage: "80",
   },
 
   {
     id: 6,
-    title: "Jquery",
-    percentage: "50",
-  },
-
-  {
-    id: 7,
-    title: "Angular",
+    title: "React",
     percentage: "65",
   },
 
   {
-    id: 8,
-    title: "React",
-    percentage: "45",
+    id: 7,
+    title: "C#",
+    percentage: "47",
+  },
+
+  {
+    id: 7,
+    title: "Git",
+    percentage: "83",
   },
 ];
 
