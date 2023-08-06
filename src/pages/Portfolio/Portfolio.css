@@ -12,8 +12,9 @@
 .portfolio-img {
   height: 250px;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   vertical-align: middle;
+  background: whitesmoke;
 }
 
 .portfolio-hover {
@@ -107,5 +108,6 @@
 .modal-img {
   width: 100%;
   height: 350px;
-  object-fit: cover;
+  object-fit: fill;
+  background: whitesmoke;
 }
