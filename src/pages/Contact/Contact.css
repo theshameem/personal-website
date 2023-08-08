@@ -94,3 +94,30 @@
   font-size: var(--h3-font-size);
   line-height: 64px;
 }
+
+@media screen and (max-width: 860px) {
+  .contact {
+    .grid {
+      display: unset;
+    }
+
+    .contact-data {
+      padding: 0 24px 24px 24px;
+    }
+    .form-input-group {
+      display: unset;
+    }
+
+    .contact-form {
+      padding: 0 24px 24px 24px;
+    }
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    .form-input-div {
+      margin-bottom: 20px;
+    }
+  }
+}
