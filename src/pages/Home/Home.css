@@ -88,5 +88,9 @@
       margin-bottom: 12px;
       font-size: 14px;
     }
+
+    .h-content {
+      padding-bottom: 40px;
+    }
   }
 }
