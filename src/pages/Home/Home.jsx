@@ -16,11 +16,11 @@ function Home() {
           </h1>
 
           <p className="h-description">
-            I'm a dedicated front-end developer with a passion for learning and
-            staying up-to-date with new technologies. With a focus on creating
-            beautiful and user-friendly websites, I strive to continuously
-            enhance my skills and explore innovative approaches to deliver
-            exceptional digital experiences.
+            I'm a dedicated front-end software engineer with a passion for
+            learning and staying up-to-date with new technologies. With a focus
+            on creating beautiful and user-friendly websites, I strive to
+            continuously enhance my skills and explore innovative approaches to
+            deliver exceptional digital experiences.
           </p>
 
           <Link to="/about" className="button">
