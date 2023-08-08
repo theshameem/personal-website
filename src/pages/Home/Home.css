@@ -45,6 +45,7 @@
 .h-description {
   line-height: 2.125;
   color: var(--title-color);
+  margin-bottom: 16px;
 }
 
 .color-block {
@@ -55,4 +56,37 @@
   top: -50%;
   left: -83%;
   transform: rotate(-15deg);
+}
+
+@media screen and (max-width: 860px) {
+  .home {
+    grid-template-columns: unset !important;
+    gap: unset;
+
+    .color-block {
+      all: unset;
+    }
+
+    .h-img {
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin-inline: auto;
+      height: 80%;
+    }
+
+    .h-title {
+      padding-left: 0;
+      font-size: var(--h3-font-size);
+    }
+
+    .h-title::before {
+      all: unset;
+    }
+
+    .h-description {
+      line-height: 2;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+  }
 }
