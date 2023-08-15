@@ -172,3 +172,22 @@
   font-size: var(--small-font-size);
   line-height: 1.6;
 }
+
+@media screen and (max-width: 860px) {
+  .about-container,
+  .info-list,
+  .stats,
+  .resume-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .skills {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .section-title {
+    margin-bottom: 0;
+  }
+}
