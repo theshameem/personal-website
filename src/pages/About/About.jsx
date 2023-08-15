@@ -26,7 +26,7 @@ function About() {
             </ul>
 
             <a href={CV} download="" className="button">
-              Download CV
+              Resume
               <span className="button-icon">
                 <FaDownload />
               </span>
