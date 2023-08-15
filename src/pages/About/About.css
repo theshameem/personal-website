@@ -186,8 +186,4 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-
-  .section-title {
-    margin-bottom: 0;
-  }
 }
