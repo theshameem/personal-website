@@ -192,13 +192,13 @@ export const resume = [
 export const skills = [
   {
     id: 1,
-    title: "Html",
+    title: "HTML",
     percentage: "90",
   },
 
   {
     id: 2,
-    title: "Css",
+    title: "CSS",
     percentage: "85",
   },
 
