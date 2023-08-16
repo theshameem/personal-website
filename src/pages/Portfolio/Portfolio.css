@@ -111,3 +111,20 @@
   object-fit: fill;
   background: whitesmoke;
 }
+
+@media screen and (max-width: 860px) {
+  .portfolio {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .modal-close {
+    top: -8%;
+    right: -3.5%;
+  }
+}
