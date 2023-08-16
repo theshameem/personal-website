@@ -157,3 +157,9 @@ img {
   text-align: center;
   line-height: 60px;
 }
+
+@media screen and (max-width: 860px) {
+  .section-title {
+    font-size: var(--h1-font-size);
+  }
+}
