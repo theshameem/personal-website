@@ -2,12 +2,18 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProfileImage from "../../assets/shameem_alam.png";
+import ProfileImageMobile from "../../assets/shameem_alam_mobile.png";
 import "./Home.css";
 
 function Home() {
   return (
     <section className="home section grid">
       <img src={ProfileImage} alt="profile-image" className="h-img" />
+      <img
+        src={ProfileImageMobile}
+        alt="profile-image-mobile"
+        className="h-img-mobile"
+      />
 
       <div className="h-content">
         <div className="h-data">

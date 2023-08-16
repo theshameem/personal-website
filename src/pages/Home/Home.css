@@ -58,17 +58,28 @@
   transform: rotate(-15deg);
 }
 
+.h-img-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 860px) {
   .home {
     grid-template-columns: unset !important;
     gap: unset;
+    /* padding: 32px; */
 
     .color-block {
       all: unset;
     }
 
     .h-img {
+      display: none;
+    }
+
+    .h-img-mobile {
+      display: block;
       border-radius: 50%;
+      object-fit: cover;
       box-sizing: border-box;
       margin-inline: auto;
       height: 80%;
@@ -76,6 +87,7 @@
 
     .h-title {
       padding-left: 0;
+      padding-bottom: 14px;
       font-size: var(--h3-font-size);
     }
 
@@ -84,8 +96,6 @@
     }
 
     .h-description {
-      line-height: 2;
-      margin-bottom: 12px;
       font-size: 14px;
     }
 
