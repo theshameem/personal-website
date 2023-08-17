@@ -244,82 +244,88 @@ export const portfolio = [
     id: 1,
     img: Work1,
     title: "Ewopharma",
+    description:
+      "<li>Implemented Leave Management, Idea Capture module for Human Resource department.</li> <li>Contributed to the performance manager module for employees.</li> <li>Implemented two reporting sub-module for pharmaceutical material management.</li>",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Photo",
+        desc: "EwoPharma",
       },
       {
         icon: <FiUser />,
-        title: "Client : ",
-        desc: "Dribble",
+        title: "Associated with : ",
+        desc: "SELISE",
       },
       {
         icon: <FaCode />,
-        title: "Language : ",
-        desc: "Adobe Photoshop",
+        title: "Tech stack : ",
+        desc: "Angular, TypeScript",
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: "www.dribble.com",
-      },
-    ],
-  },
-
-  {
-    id: 3,
-    img: Work3,
-    title: "SV Group",
-    details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Video",
-      },
-      {
-        icon: <FiUser />,
-        title: "Client : ",
-        desc: "Dribble",
-      },
-      {
-        icon: <FaCode />,
-        title: "Language : ",
-        desc: "Adobe Premium",
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: "N/A",
       },
     ],
   },
 
   {
     id: 2,
-    img: Work2,
-    title: "Swiss Leaders",
+    img: Work3,
+    title: "SV Group",
+    description:
+      "<li>Contributed to complex responsive  microsite creation for the restaurant and set the role management.</li> <li>Implemented user management module for different users.</li> <li>Worked on initial phase of Single Sign-On(SSO).</li>",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Website",
+        desc: "SV Project Omega",
       },
       {
         icon: <FiUser />,
-        title: "Client : ",
-        desc: "Dribble",
+        title: "Associated with : ",
+        desc: "SELISE",
       },
       {
         icon: <FaCode />,
-        title: "Language : ",
-        desc: "React JS",
+        title: "Tech stack : ",
+        desc: "Angular, TypeScript",
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: "N/A",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    img: Work2,
+    title: "Swiss Leaders",
+    description:
+      "<li>Engaged in bug-fixing tasks to enhance application stability and performance.</li> <li>Developed functionality to generate PDF certificates, enhancing the system's capability to create official certificates seamlessly. </li> <li>Eager fresher actively engaged in project tasks, learning swiftly, and contributing to the team's growth with a positive attitude.</li>",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "SKO",
+      },
+      {
+        icon: <FiUser />,
+        title: "Associated with : ",
+        desc: "SELISE",
+      },
+      {
+        icon: <FaCode />,
+        title: "Tech stack : ",
+        desc: "Angular, TypeScript",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: "N/A",
       },
     ],
   },
