@@ -1,7 +1,8 @@
+import parse from "html-react-parser";
 import React, { useState } from "react";
 import Close from "../assets/close.svg";
 
-const PortfolioItem = ({ img, title, details }) => {
+const PortfolioItem = ({ img, title, details, description }) => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -43,7 +44,9 @@ const PortfolioItem = ({ img, title, details }) => {
               })}
             </ul>
 
-            <img src={img} alt="" className="modal-img" />
+            <div>{parse(description)}</div>
+            {/* TODO: might need later  */}
+            {/* <img src={img} alt="" className="modal-img" /> */}
           </div>
         </div>
       )}
