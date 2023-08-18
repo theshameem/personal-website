@@ -139,7 +139,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: "Feb, 2022 - Present",
     title: "Software Engineer <span> Selise Digital Platforms </span>",
-    desc: "<li> Contributed to the development of new features for an enterprise project as a front-end developer </li> <li>Currently working on a content management system (CMS) in front-end development </li><li>Implementing new features and modules using HTML, CSS, and Angular as required </li><li>Integrating APIs and implementing CRUD operations on the front-end side </li><li>Maintaining code review standards and following organizational rules and regulations </li><li>Collaborating with cross-functional teams in a fast-paced, deadline-driven environment </li><li> Working with an Agile methodology </li>",
+    desc: "<li> Contributed to three distinct enterprise projects to develop new features and bug fixing  as a front-end developer. </li> <li>Worked on a content management system(CMS) in front-end development. </li><li>Implementing new features and modules as per the requirement using HTML, CSS, Angular & TypeScript. </li><li>Implementing API integration and CRUD operations from the front-end side.</li><li>Maintaining PR review, coding standardization, rules and regulations set by the organization. </li><li>Collaborating with cross-functional teams in a fast-paced, deadline-driven environment </li><li> Working on an Agile methodology. </li>",
   },
 
   {
