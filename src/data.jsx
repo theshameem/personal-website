@@ -167,7 +167,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: "Sep, 2017 - Jul, 2022",
     title: "Bachelor's Degree <span> Daffodil International University </span>",
-    desc: "<li> Achieved the prestigious title of champion in the DIU Take-off Programming Contest, Spring 2018, surpassing 300 participants. </li><li>Participated in three regional contests of ACM ICPC Dhaka, showcasing my dedication and involvement in competitive programming. </li> <li> <strong> CGPA: </strong> 3.58 out of 4.00 </li>",
+    desc: "<li> Achieved the prestigious title of champion in the DIU Take-off Programming Contest, Spring 2018, surpassing 300 participants. </li><li>Participated in three regional contests of ACM ICPC Dhaka, showcasing my dedication and involvement in competitive programming. </li> <li>Solved more than <b>1800</b> problems from different online judges. </li> <li> <strong> CGPA: </strong> 3.58 out of 4.00 </li> ",
   },
 
   {
