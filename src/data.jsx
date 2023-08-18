@@ -10,8 +10,9 @@ import {
 import { FiExternalLink, FiFileText, FiUser } from "react-icons/fi";
 
 import Work1 from "./assets/Logo-ewo.svg";
-import Work2 from "./assets/Logo-sko.svg";
-import Work3 from "./assets/Logo-sv.png";
+import Work3 from "./assets/Logo-sko.svg";
+import Work2 from "./assets/Logo-sv.png";
+import Work4 from "./assets/real-estate.png";
 
 export const links = [
   {
@@ -272,7 +273,7 @@ export const portfolio = [
 
   {
     id: 2,
-    img: Work3,
+    img: Work2,
     title: "SV Group",
     description:
       "<li>Contributed to complex responsive  microsite creation for the restaurant and set the role management.</li> <li>Implemented user management module for different users.</li> <li>Worked on initial phase of Single Sign-On(SSO).</li>",
@@ -302,7 +303,7 @@ export const portfolio = [
 
   {
     id: 3,
-    img: Work2,
+    img: Work3,
     title: "Swiss Leaders",
     description:
       "<li>Engaged in bug-fixing tasks to enhance application stability and performance.</li> <li>Developed functionality to generate PDF certificates, enhancing the system's capability to create official certificates seamlessly. </li> <li>Eager fresher actively engaged in project tasks, learning swiftly, and contributing to the team's growth with a positive attitude.</li>",
@@ -326,6 +327,36 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: "N/A",
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    img: Work4,
+    title: "Real Estate",
+    description:
+      "A static real estate website utilizing React.js. This project involved creating a visually appealing and user-friendly interface to showcase real estate listings, offering an immersive browsing experience for potential buyers or renters.",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Real Estate",
+      },
+      {
+        icon: <FiUser />,
+        title: "Associated with : ",
+        desc: "Personal",
+      },
+      {
+        icon: <FaCode />,
+        title: "Tech stack : ",
+        desc: "React, JavaScript",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: "theshameem.github.io/Real-Estate-Website/",
       },
     ],
   },
