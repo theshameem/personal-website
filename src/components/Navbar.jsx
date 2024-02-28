@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { GrFormClose } from "react-icons/gr";
 import { NavLink } from "react-router-dom";

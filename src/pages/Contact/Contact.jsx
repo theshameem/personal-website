@@ -1,5 +1,4 @@
 import emailjs from "emailjs-com";
-import React from "react";
 import {
   FaEnvelopeOpen,
   FaFacebookF,

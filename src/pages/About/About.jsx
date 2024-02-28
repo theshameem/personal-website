@@ -1,4 +1,3 @@
-import React from "react";
 import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/Resume_Shameem_Alam.pdf";
 import Info from "../../components/Info";
