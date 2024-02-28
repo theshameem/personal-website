@@ -60,7 +60,7 @@ export const personalInfo = [
   {
     id: 3,
     title: "Age : ",
-    description: "25 Years",
+    description: "26 Years",
   },
 
   {
@@ -109,13 +109,13 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: "1+",
+    no: "2+",
     title: "Years of <br /> Experience",
   },
 
   {
     id: 2,
-    no: "5+",
+    no: "7+",
     title: "Completed <br /> Projects",
   },
 
@@ -224,7 +224,7 @@ export const skills = [
   {
     id: 6,
     title: "React",
-    percentage: "65",
+    percentage: "55",
   },
 
   {
@@ -236,7 +236,7 @@ export const skills = [
   {
     id: 7,
     title: "Git",
-    percentage: "83",
+    percentage: "80",
   },
 ];
 

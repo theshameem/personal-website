@@ -1,4 +1,3 @@
-import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProfileImage from "../../assets/shameem_alam.png";
@@ -22,11 +21,12 @@ function Home() {
           </h1>
 
           <p className="h-description">
-            I'm a dedicated front-end software engineer with a passion for
+            I'm a dedicated full-stack software engineer with a passion for
             learning and staying up-to-date with new technologies. With a focus
-            on creating beautiful and user-friendly websites, I strive to
-            continuously enhance my skills and explore innovative approaches to
-            deliver exceptional digital experiences.
+            on creating beautiful and user-friendly websites, and back-end
+            development, where I have a strong foundation in C# and the .NET
+            framework. I strive to continuously enhance my skills and explore
+            innovative approaches to deliver exceptional digital experiences.
           </p>
 
           <Link to="/about" className="button">
