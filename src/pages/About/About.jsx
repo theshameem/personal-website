@@ -2,7 +2,6 @@ import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/Resume_Shameem_Alam.pdf";
 import Info from "../../components/Info";
 import ResumeItem from "../../components/ResumeItem";
-import Skills from "../../components/Skills";
 import Stats from "../../components/Stats";
 import { resume } from "../../data";
 import "./About.css";
@@ -41,7 +40,7 @@ function About() {
       <div className="separator" />
 
       {/* Skills section  */}
-      <section className="skills">
+      {/* <section className="skills">
         <h3 className="section-subtitle subtitle-center">My Skills</h3>
 
         <div className="skills-container grid">
@@ -49,7 +48,7 @@ function About() {
         </div>
       </section>
 
-      <div className="separator" />
+      <div className="separator" /> */}
 
       {/* Resume section  */}
       <section className="resume">
