@@ -44,6 +44,23 @@ export const links = [
   },
 ];
 
+function getMyAgeInYear() {
+  const today = new Date();
+  const birthDate = new Date(1998, 2, 31); // Month is 0-based: 2 = March
+  let age = today.getFullYear() - birthDate.getFullYear();
+
+  // Check if the birthday has not occurred yet this year
+  if (
+    today.getMonth() < birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() &&
+      today.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+}
+
 export const personalInfo = [
   {
     id: 1,
@@ -60,7 +77,7 @@ export const personalInfo = [
   {
     id: 3,
     title: "Age : ",
-    description: "26 Years",
+    description: `${getMyAgeInYear()} Years`,
   },
 
   {
