@@ -61,6 +61,23 @@ function getMyAgeInYear() {
   return age;
 }
 
+function getMyExperienceInYear() {
+  const today = new Date();
+  const startDate = new Date(2022, 1, 15); // Month is 0-based: 2 = March
+  let experience = today.getFullYear() - startDate.getFullYear();
+
+  // Check if the birthday has not occurred yet this year
+  if (
+    today.getMonth() < startDate.getMonth() ||
+    (today.getMonth() === startDate.getMonth() &&
+      today.getDate() < startDate.getDate())
+  ) {
+    experience--;
+  }
+
+  return experience;
+}
+
 export const personalInfo = [
   {
     id: 1,
@@ -89,7 +106,7 @@ export const personalInfo = [
   {
     id: 5,
     title: "Freelance : ",
-    description: "Unavailable",
+    description: "Available",
   },
 
   {
@@ -126,7 +143,7 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: "2+",
+    no: `${getMyExperienceInYear()}+`,
     title: "Years of <br /> Experience",
   },
 
