@@ -1,14 +1,16 @@
-import parse from "html-react-parser";
-import { useState } from "react";
-import Close from "../assets/close.svg";
+import { Link } from "react-router-dom";
 
-const PortfolioItem = ({ img, title, details, description }) => {
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
+const PortfolioItem = ({
+  id,
+  img,
+  title,
+  details,
+  description,
+  liveLink,
+  githubLink,
+  challenges,
+  futurePlans,
+}) => {
   return (
     <div className="portfolio-item">
       <img src={img} alt="portfolio-img" className="portfolio-img" />
@@ -16,45 +18,11 @@ const PortfolioItem = ({ img, title, details, description }) => {
       <div className="portfolio-hover">
         <div className="portfolio-hover-content">
           <h3 className="portfolio-title">{title}</h3>
-          <button className="portfolio-view-more" onClick={toggleModal}>
+          <Link to={`/portfolio/${id}`} className="portfolio-view-more">
             View more
-          </button>
+          </Link>
         </div>
       </div>
-
-      {modal && (
-        <div className="portfolio-modal">
-          <div className="portfolio-modal-content">
-            <img
-              src={Close}
-              alt=""
-              className="modal-close"
-              onClick={toggleModal}
-            />
-
-            <h3 className="modal-title">{title}</h3>
-
-            <ul className="modal-list grid">
-              {details.map(({ icon, title, desc }, index) => {
-                return (
-                  <li className="modal-item" key={index}>
-                    <span className="item-icon">{icon}</span>
-
-                    <div>
-                      <span className="item-title">{title}</span>
-                      <span className="item-details">{desc}</span>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-
-            <div>{parse(description)}</div>
-            {/* TODO: might need later  */}
-            {/* <img src={img} alt="" className="modal-img" /> */}
-          </div>
-        </div>
-      )}
     </div>
   );
 };

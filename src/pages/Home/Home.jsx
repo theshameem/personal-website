@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import CV from "../../assets/Resume_Shameem_Alam.pdf";
 import ProfileImage from "../../assets/shameem_alam.png";
 import ProfileImageMobile from "../../assets/shameem_alam_mobile.png";
 import "./Home.css";
@@ -29,12 +30,17 @@ function Home() {
             innovative approaches to deliver exceptional digital experiences.
           </p>
 
-          <Link to="/about" className="button">
-            More About Me{" "}
-            <span className="button-icon">
-              <FaArrowRight />
-            </span>
-          </Link>
+          <div className="h-buttons">
+            <Link to="/about" className="button">
+              More About Me
+              <span className="button-icon">
+                <FaArrowRight />
+              </span>
+            </Link>
+            <a href={CV} download className="button button-secondary">
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
 

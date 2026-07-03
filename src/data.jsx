@@ -170,13 +170,22 @@ export const resume = [
     id: 1,
     category: "experience",
     icon: <FaBriefcase />,
-    year: "Feb, 2022 - Present",
-    title: "Software Engineer <span> Selise Digital Platforms </span>",
-    desc: "<li> Contributed to three distinct enterprise projects to develop new features and bug fixing  as a front-end developer. </li> <li>Worked on a content management system(CMS) in front-end development. </li><li>Implementing new features and modules as per the requirement using HTML, CSS, Angular & TypeScript. </li><li>Implementing API integration and CRUD operations from the front-end side.</li><li>Maintaining PR review, coding standardization, rules and regulations set by the organization. </li><li>Collaborating with cross-functional teams in a fast-paced, deadline-driven environment </li><li> Working on an Agile methodology. </li>",
+    year: "Apr, 2025 - Present",
+    title: "Senior Software Engineer <span> Selise Digital Platforms </span>",
+    desc: "<li>Collaborating with cross-functional teams to design and implement a scalable Data Gateway, enabling developers to self-serve data sources and schemas and reducing onboarding time by 30%.</li><li>Maintaining and enhancing reusable modules (Email Template, Localization, Release Notes) leveraged by 20+ projects, improving stability and addressing feature requests.</li><li>Mentored and onboarded 4+ junior engineers, accelerating ramp-up time from 3 months to 8 weeks.</li>",
   },
 
   {
     id: 2,
+    category: "experience",
+    icon: <FaBriefcase />,
+    year: "Feb, 2022 - Mar, 2025",
+    title: "Software Engineer <span> Selise Digital Platforms </span>",
+    desc: "<li>Migrated APIs from GraphQL to REST, boosting performance and scalability for 50,000+ users.</li><li>Built a Human Resources Directory for performance, leave management, and idea submissions, driving 20% higher employee satisfaction.</li><li>Delivered 4+ large-scale projects in Agile teams using Angular, ASP.NET Core, React, and GitHub, consistently meeting sprint goals.</li>",
+  },
+
+  {
+    id: 3,
     category: "experience",
     icon: <FaBriefcase />,
     year: "2019 - 2022",
@@ -225,51 +234,29 @@ export const resume = [
 
 export const skills = [
   {
-    id: 1,
-    title: "HTML",
-    percentage: "90",
+    category: "Frontend",
+    items: [
+      { title: "React", percentage: "90" },
+      { title: "TypeScript", percentage: "88" },
+      { title: "Tailwind CSS", percentage: "80" },
+      { title: "Redux", percentage: "78" },
+    ],
   },
-
   {
-    id: 2,
-    title: "CSS",
-    percentage: "85",
+    category: "Backend",
+    items: [
+      { title: "ASP.NET Core", percentage: "82" },
+      { title: "MongoDB", percentage: "75" },
+      { title: "xUnit", percentage: "70" },
+    ],
   },
-
   {
-    id: 3,
-    title: "JavaScript",
-    percentage: "89",
-  },
-
-  {
-    id: 4,
-    title: "TypeScript",
-    percentage: "85",
-  },
-
-  {
-    id: 5,
-    title: "Angular",
-    percentage: "80",
-  },
-
-  {
-    id: 6,
-    title: "React",
-    percentage: "55",
-  },
-
-  {
-    id: 7,
-    title: "C#",
-    percentage: "47",
-  },
-
-  {
-    id: 7,
-    title: "Git",
-    percentage: "80",
+    category: "Tools",
+    items: [
+      { title: "Git", percentage: "85" },
+      { title: "GitHub", percentage: "82" },
+      { title: "Agile/Kanban", percentage: "80" },
+    ],
   },
 ];
 
@@ -279,7 +266,7 @@ export const portfolio = [
     img: Work1,
     title: "Ewopharma",
     description:
-      "<li>Implemented Leave Management, Idea Capture module for Human Resource department.</li> <li>Contributed to the performance manager module for employees.</li> <li>Implemented two reporting sub-module for pharmaceutical material management.</li>",
+      "<li>Implemented Leave Management and Idea Capture modules for the Human Resource department.</li><li>Contributed to the performance manager module for employee appraisal tracking.</li><li>Implemented reporting sub-modules for pharmaceutical material management.</li>",
     details: [
       {
         icon: <FiFileText />,
@@ -294,7 +281,7 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: "Tech stack : ",
-        desc: "Angular, TypeScript",
+        desc: "Angular, TypeScript, ASP.NET Core",
       },
       {
         icon: <FiExternalLink />,
@@ -302,6 +289,12 @@ export const portfolio = [
         desc: "N/A",
       },
     ],
+    liveLink: null,
+    githubLink: null,
+    challenges:
+      "Balancing enterprise feature requirements with maintainability, while keeping the HR workflow intuitive for 400+ employees.",
+    futurePlans:
+      "Continue improving reporting automation and add analytics dashboards for HR decision-makers.",
   },
 
   {
@@ -309,7 +302,7 @@ export const portfolio = [
     img: Work2,
     title: "SV Group",
     description:
-      "<li>Contributed to complex responsive  microsite creation for the restaurant and set the role management.</li> <li>Implemented user management module for different users.</li> <li>Worked on initial phase of Single Sign-On(SSO).</li>",
+      "<li>Contributed to a responsive restaurant microsite and built role-based user management.</li><li>Implemented the initial phase of Single Sign-On (SSO).</li>",
     details: [
       {
         icon: <FiFileText />,
@@ -324,7 +317,7 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: "Tech stack : ",
-        desc: "Angular, TypeScript",
+        desc: "Angular, TypeScript, REST API",
       },
       {
         icon: <FiExternalLink />,
@@ -332,6 +325,12 @@ export const portfolio = [
         desc: "N/A",
       },
     ],
+    liveLink: null,
+    githubLink: null,
+    challenges:
+      "Integrating role management and SSO while preserving a responsive experience across desktop and mobile devices.",
+    futurePlans:
+      "Expand the site with a customer-facing dashboard and better analytics for user activity.",
   },
 
   {
@@ -339,7 +338,7 @@ export const portfolio = [
     img: Work3,
     title: "Swiss Leaders",
     description:
-      "<li>Engaged in bug-fixing tasks to enhance application stability and performance.</li> <li>Developed functionality to generate PDF certificates, enhancing the system's capability to create official certificates seamlessly. </li> <li>Eager fresher actively engaged in project tasks, learning swiftly, and contributing to the team's growth with a positive attitude.</li>",
+      "<li>Worked on bug fixing to improve application stability and performance.</li><li>Developed PDF certificate generation functionality.</li><li>Actively learned project workflows and contributed to team deliverables.</li>",
     details: [
       {
         icon: <FiFileText />,
@@ -354,7 +353,7 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: "Tech stack : ",
-        desc: "Angular, TypeScript",
+        desc: "Angular, TypeScript, PDF Generation",
       },
       {
         icon: <FiExternalLink />,
@@ -362,6 +361,12 @@ export const portfolio = [
         desc: "N/A",
       },
     ],
+    liveLink: null,
+    githubLink: null,
+    challenges:
+      "Stabilizing legacy modules while adding new certificate generation features for business users.",
+    futurePlans:
+      "Improve reporting, user flows, and automation for document exports.",
   },
 
   {
@@ -369,12 +374,12 @@ export const portfolio = [
     img: Work4,
     title: "Real Estate",
     description:
-      "A static real estate website utilizing React.js. This project involved creating a visually appealing and user-friendly interface to showcase real estate listings, offering an immersive browsing experience for potential buyers or renters.",
+      "A static real estate website utilizing React.js. This project involved creating a visually appealing and user-friendly interface to showcase listings for potential buyers and renters.",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Real Estate",
+        desc: "Real Estate Website",
       },
       {
         icon: <FiUser />,
@@ -384,7 +389,7 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: "Tech stack : ",
-        desc: "React, JavaScript",
+        desc: "React, JavaScript, CSS",
       },
       {
         icon: <FiExternalLink />,
@@ -392,5 +397,11 @@ export const portfolio = [
         desc: "theshameem.github.io/Real-Estate-Website/",
       },
     ],
+    liveLink: "https://theshameem.github.io/Real-Estate-Website/",
+    githubLink: "https://github.com/theshameem/Real-Estate-Website",
+    challenges:
+      "Designing a responsive real estate interface while keeping load time low across desktop and mobile.",
+    futurePlans:
+      "Add search filters, property detail pages, and a CMS-backed admin panel.",
   },
 ];

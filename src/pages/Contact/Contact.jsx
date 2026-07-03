@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaPhoneSquareAlt,
   FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { Form, Input, TextArea } from "semantic-ui-react";
@@ -34,7 +35,7 @@ function Contact() {
           text: error.text,
         });
         e.target.reset();
-      }
+      },
     );
   };
 
@@ -72,18 +73,27 @@ function Contact() {
                 <h4 className="info-desc">+880 16113 77700</h4>
               </div>
             </div>
+
+            <div className="info-item">
+              <FaWhatsapp className="info-icon" />
+
+              <div>
+                <span className="info-title">WhatsApp</span>
+                <h4 className="info-desc">+880 16113 77700</h4>
+              </div>
+            </div>
           </div>
 
           <div className="contact-socials">
             <a
-              href="https://www.linkedin.com/in/shameem-alam/"
+              href="https://www.linkedin.com/in/theshameem/"
               className="contact-social-link"
               target="__blank"
             >
               <FaLinkedin />
             </a>
             <a
-              href="https://facebook.com/wl.reino"
+              href="https://facebook.com/theshameem.alam"
               className="contact-social-link"
               target="__blank"
             >

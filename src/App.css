@@ -53,8 +53,20 @@ textarea {
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--body-color);
   color: var(--text-color);
+}
+
+#root,
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
 }
 
 h1,
@@ -129,6 +141,16 @@ img {
 
 .button:hover {
   color: var(--text-white);
+}
+
+.button-secondary {
+  border-color: transparent;
+  color: var(--text-white);
+  background-color: var(--first-color);
+}
+
+.button-secondary::before {
+  transform: translateX(0);
 }
 
 .button::before {

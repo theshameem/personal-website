@@ -1,4 +1,6 @@
 .home {
+  position: relative;
+  z-index: 1;
   grid-template-columns: 4.32fr 7.68fr;
   align-items: center;
   background-color: var(--fast-color);
@@ -48,6 +50,22 @@
   margin-bottom: 16px;
 }
 
+.h-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button-secondary {
+  border-color: transparent;
+  color: var(--text-white);
+  background-color: var(--first-color);
+}
+
+.button-secondary::before {
+  transform: translateX(0);
+}
+
 .color-block {
   position: fixed;
   height: 200%;
@@ -56,6 +74,7 @@
   top: -50%;
   left: -83%;
   transform: rotate(-15deg);
+  z-index: -1;
 }
 
 .h-img-mobile {
