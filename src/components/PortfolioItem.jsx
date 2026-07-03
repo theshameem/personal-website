@@ -1,5 +1,5 @@
 import parse from "html-react-parser";
-import React, { useState } from "react";
+import { useState } from "react";
 import Close from "../assets/close.svg";
 
 const PortfolioItem = ({ img, title, details, description }) => {
@@ -13,8 +13,13 @@ const PortfolioItem = ({ img, title, details, description }) => {
     <div className="portfolio-item">
       <img src={img} alt="portfolio-img" className="portfolio-img" />
 
-      <div className="portfolio-hover" onClick={toggleModal}>
-        <h3 className="portfolio-title">{title}</h3>
+      <div className="portfolio-hover">
+        <div className="portfolio-hover-content">
+          <h3 className="portfolio-title">{title}</h3>
+          <button className="portfolio-view-more" onClick={toggleModal}>
+            View more
+          </button>
+        </div>
       </div>
 
       {modal && (
